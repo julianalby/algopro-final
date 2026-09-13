@@ -670,13 +670,13 @@ int main(){
 			scanf("%s", column); // Input column
 			
 			// If column's data type is string
-			if(strcmp(column, "Location") == 0 || strcmp(column, "City") == 0 || strcmp(column, "Type") == 0 || strcmp(column, "Furnish") == 0){
+			if(strcmpi(column, "Location") == 0 || strcmpi(column, "City") == 0 || strcmpi(column, "Type") == 0 || strcmpi(column, "Furnish") == 0){
 				printf("What data do you want to find? ");
 				scanf("%s", query); // Input query
 				search(i, column, query); // Search
 			}
 			// If column's data type is integer
-			else if(strcmp(column, "Price") == 0 || strcmp(column, "Rooms") == 0 || strcmp(column, "Bathroom") == 0 || strcmp(column, "Carpark") == 0){
+			else if(strcmpi(column, "Price") == 0 || strcmpi(column, "Rooms") == 0 || strcmpi(column, "Bathroom") == 0 || strcmpi(column, "Carpark") == 0){
 				printf("What data do you want to find? ");
 				scanf("%d", &target); // Input query
 				searchInt(i, column, target); // Search
